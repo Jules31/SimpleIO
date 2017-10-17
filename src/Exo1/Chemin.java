@@ -11,7 +11,7 @@ public class Chemin {
         String path = sc.nextLine();
         File file = new File(path);
 
-        if (file.isFile()){
+        if (file.isFile()){                                                             //renvoie si le chemin existe ou non
             System.out.println("Le chemin d'accès existe et il s'agit d'un fichier");
         }
         if(file.exists()&& file.isDirectory()){
